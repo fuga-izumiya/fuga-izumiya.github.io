@@ -1,0 +1,181 @@
+html {
+    overflow: auto;
+}
+
+body {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    background-image: url("img/background.jpg");
+    overflow: hidden;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#header {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-size: 30px;
+    z-index: 100;
+}
+
+#header span {
+    color: orange;
+    position: relative;
+}
+
+
+#header span a {
+    color: orange;
+}
+
+#header ul {
+    height: 30px;
+    width: 80%;
+    margin: 0px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+#logo-mini {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    position: fixed;
+}
+
+.links {
+    font-size: 20px;
+    height: 30px;
+    text-align: left;
+    color: white;
+    padding-left: 30px;
+}
+
+.links a {
+    color: white;
+    background: linear-gradient(white 0 0)bottom /var(--d, 0%)3px no-repeat;
+    transition: .5s;
+}
+
+a {
+    text-underline-offset: 8px;
+    text-decoration: none;
+    background: linear-gradient(orange 0 0)bottom /var(--d, 0%)3px no-repeat;
+    transition: .5s;
+}
+
+a:hover {
+    --d: 110%
+}
+
+div {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.table {
+    margin-top: 50px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table li {
+    padding: 10px;
+    font-size: 50px;
+    height: 400px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: table;
+    padding: 0px;
+}
+
+li {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+li img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 80px;
+    color: orange;
+    margin-top: 100px;
+}
+
+#zoomback {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    display: none;
+    position: absolute;
+}
+
+#zoomback p {
+    display: inline;
+    font-size: 80px;
+    color: white;
+    margin: 50px;
+}
+
+#zoomimg {
+    width: 50%;
+}
+
+#zoomback img {
+    width: 80%;
+    left: 50px;
+    margin: 100px;
+    border: solid 5px #fff;
+}
+
+.deka {
+    animation: deka 0.3s ease-out;
+}
+
+.zoom-box {
+    display: inline-block;
+    overflow: hidden;
+    width: 80%;
+}
+
+.zoom {
+    transition-duration: .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+@keyframes deka {
+    from {
+        transform: scale(0);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #zoomback p {
+        font-size: 35px;
+    }
+
+    .table li {
+        font-size: 20px;
+    }
+
+    .links{
+        display: none;
+    }
+}

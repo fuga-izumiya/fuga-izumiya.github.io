@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('view');
         }
 
-        if (2300 < window.scrollY) {
+        if (2550 < window.scrollY) {
             car.style.visibility = 'visible';
             car.classList.add('view');
         } else {
